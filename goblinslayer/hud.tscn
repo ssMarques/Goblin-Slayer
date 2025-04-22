@@ -1,0 +1,36 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxddjdcy74b0q"]
+
+[ext_resource type="Script" path="res://hud.gd" id="1_ud777"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_ud777")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="LabelVida" type="Label" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+text = "Vida: 100
+
+"
+
+[node name="LabelDinheiro" type="Label" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+text = "Dinheiro: 0
+
+"
+
+[node name="LabelKills" type="Label" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+text = "Kills: 0
+
+"
+
+[node name="ContadorLabel" type="Label" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+text = "Inimigo aparece em: 10"
+horizontal_alignment = 1

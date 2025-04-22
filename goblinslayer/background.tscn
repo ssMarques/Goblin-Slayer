@@ -1,0 +1,36 @@
+[gd_scene load_steps=7 format=3 uid="uid://dv1yftjgg6rsp"]
+
+[ext_resource type="Texture2D" uid="uid://b2ynup0pgqirs" path="res://assets/nuvem-1.png" id="2_splo0"]
+[ext_resource type="Texture2D" uid="uid://cfiehsunwd18r" path="res://assets/nuvem-2.png" id="3_eq6nc"]
+[ext_resource type="Script" path="res://cloud_1.gd" id="3_splo0"]
+[ext_resource type="Texture2D" uid="uid://brgnjhgnm8v4f" path="res://assets/nuvem-3.png" id="5_bpugw"]
+[ext_resource type="Script" path="res://cloud_2.gd" id="5_eq6nc"]
+[ext_resource type="Script" path="res://cloud_3.gd" id="6_bpugw"]
+
+[node name="Background" type="Node2D"]
+
+[node name="Clouds" type="Node2D" parent="."]
+
+[node name="Cloud1" type="Sprite2D" parent="Clouds"]
+position = Vector2(-834, 420)
+scale = Vector2(6.65625, 5.85938)
+texture = ExtResource("2_splo0")
+script = ExtResource("3_splo0")
+
+[node name="Cloud2" type="Sprite2D" parent="Clouds"]
+position = Vector2(486, 644)
+scale = Vector2(3.89063, 3.9375)
+texture = ExtResource("3_eq6nc")
+script = ExtResource("5_eq6nc")
+
+[node name="Cloud4" type="Sprite2D" parent="Clouds"]
+position = Vector2(-846, 1341)
+scale = Vector2(3.89453, 3.35547)
+texture = ExtResource("5_bpugw")
+script = ExtResource("6_bpugw")
+
+[node name="Cloud5" type="Sprite2D" parent="Clouds"]
+position = Vector2(508, 1342)
+scale = Vector2(6.65625, 5.85938)
+texture = ExtResource("2_splo0")
+script = ExtResource("3_splo0")

@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://dktulmdupxjfp"]
+
+[ext_resource type="Script" path="res://tutorial.gd" id="1_el14h"]
+[ext_resource type="Texture2D" uid="uid://cev0iin5orsui" path="res://SplashScreen/59575482-e1fb-4870-9546-4a1b2e26a69d.png" id="2_u3igo"]
+
+[node name="TutorialCanvas" type="Node2D"]
+script = ExtResource("1_el14h")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+offset_left = 542.0
+offset_top = 177.0
+offset_right = 938.0
+offset_bottom = 573.0
+texture = ExtResource("2_u3igo")
+expand_mode = 3
+stretch_mode = 6
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+offset_right = 8.0
+offset_bottom = 8.0

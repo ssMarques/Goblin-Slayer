@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://coxv0fpv4qrbd"
+path="res://.godot/imported/Sonic 1 Music： Game Over.mp3-2279133105f8d51e62f40d3e61965ec8.mp3str"
+
+[deps]
+
+source_file="res://SplashScreen/Sonic 1 Music： Game Over.mp3"
+dest_files=["res://.godot/imported/Sonic 1 Music： Game Over.mp3-2279133105f8d51e62f40d3e61965ec8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

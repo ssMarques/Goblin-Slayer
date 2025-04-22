@@ -1,0 +1,49 @@
+[gd_scene load_steps=3 format=3 uid="uid://cdl72spfdeqa8"]
+
+[ext_resource type="Script" path="res://historia.gd" id="1_l51l5"]
+[ext_resource type="Texture2D" uid="uid://dxv61i5w4m4m8" path="res://SplashScreen/9fd4252b-940f-4bcf-a44f-7920e689abb2.png" id="2_frv7s"]
+
+[node name="historia" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 441.0
+offset_top = 283.0
+offset_right = 441.0
+offset_bottom = 283.0
+script = ExtResource("1_l51l5")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 0
+offset_left = -439.0
+offset_top = -283.0
+offset_right = 1051.0
+offset_bottom = 486.0
+texture = ExtResource("2_frv7s")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 15.0
+offset_top = -268.0
+offset_right = 598.0
+offset_bottom = -63.0
+text = "Ano 1300.
+
+A humanidade está à beira da extinção.  
+Goblins surgem das florestas sombrias, obedecendo a um poderoso xamã.  
+Você, o último mago, é a única esperança.
+
+Defenda a última cidade com sua magia!
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 90.0
+offset_top = 407.0
+offset_right = 519.0
+offset_bottom = 438.0
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

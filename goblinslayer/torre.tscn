@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://cewsnyvkxevmo"]
+
+[ext_resource type="Script" path="res://Tower.gd" id="1_e7lc2"]
+[ext_resource type="Texture2D" uid="uid://dkb8dxtpbt1nd" path="res://assets/Foozle_2DS0017_Spire_TowerPack_1/Foozle_2DS0017_Spire_TowerPack_1/Towers bases/PNGs/Tower 01.png" id="2_320ep"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_m150b"]
+custom_solver_bias = 1.0
+radius = 200.0
+
+[node name="Tower" type="Node2D"]
+script = ExtResource("1_e7lc2")
+
+[node name="Sprite-torre" type="Sprite2D" parent="."]
+texture = ExtResource("2_320ep")
+
+[node name="AttackRange" type="Area2D" parent="."]
+scale = Vector2(2.20833, 1.425)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackRange"]
+shape = SubResource("CircleShape2D_m150b")
+one_way_collision_margin = 128.0
+
+[node name="Marker2D" type="Marker2D" parent="AttackRange/CollisionShape2D"]

@@ -1,0 +1,48 @@
+[gd_scene load_steps=4 format=3 uid="uid://byncd8kl7ear"]
+
+[ext_resource type="Script" path="res://game_over.gd" id="1_y26ei"]
+[ext_resource type="AudioStream" uid="uid://coxv0fpv4qrbd" path="res://SplashScreen/Sonic 1 Music： Game Over.mp3" id="2_ccer4"]
+[ext_resource type="Texture2D" uid="uid://cbk2hxu2s846r" path="res://SplashScreen/ddba2efd-45c9-48e0-a58b-2b9cbe2db9c9.png" id="2_yxx3c"]
+
+[node name="GameOver" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 739.0
+offset_top = 372.0
+offset_right = 739.0
+offset_bottom = 372.0
+script = ExtResource("1_y26ei")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_ccer4")
+volume_db = -25.509
+autoplay = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -740.0
+offset_top = -373.0
+offset_right = 751.0
+offset_bottom = 398.0
+texture = ExtResource("2_yxx3c")
+expand_mode = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = -144.0
+offset_top = -31.0
+offset_right = 177.0
+offset_bottom = 105.0
+alignment = 1
+
+[node name="Tentar Novamente" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Tentar Novamente"
+
+[node name="Voltar ao Menu" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Voltar ao Menu"
+
+[node name="Sair" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Sair"

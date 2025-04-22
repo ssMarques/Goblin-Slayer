@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://4d6hkjtqg4vm"]
+
+[ext_resource type="Script" uid="uid://dha5gormid44e" path="res://tutorial_mago.gd" id="1_5yvlu"]
+[ext_resource type="Texture2D" uid="uid://5q120feviy10" path="res://SplashScreen/4e200090-d508-4a8a-b964-e7da2f14cf9d.png" id="2_sr4qn"]
+
+[node name="TutorialMago" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_5yvlu")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 309.0
+offset_top = 551.0
+offset_right = 378.0
+offset_bottom = 598.0
+texture = ExtResource("2_sr4qn")
+expand_mode = 2
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 315.0
+offset_top = 620.0
+offset_right = 355.0
+offset_bottom = 643.0
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 396.0
+offset_top = 609.0
+offset_right = 429.0
+offset_bottom = 667.0

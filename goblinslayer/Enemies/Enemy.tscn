@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://u81y65qu2uj1"]
+
+[ext_resource type="Script" uid="uid://bnjedbqfuh2nh" path="res://Enemies/enemy.gd" id="1_ejqat"]
+[ext_resource type="Texture2D" uid="uid://dw5a84nge2264" path="res://assets/AmberGoblin/Idle.png" id="2_ecr8s"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3tcu3"]
+size = Vector2(200, 135)
+
+[node name="enemy" type="CharacterBody2D"]
+script = ExtResource("1_ejqat")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_ecr8s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-4, 29.5)
+shape = SubResource("RectangleShape2D_3tcu3")
